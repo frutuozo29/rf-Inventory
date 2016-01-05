@@ -201,6 +201,10 @@
       <Project>{69068664-1828-4ed6-a645-7c2e85332e96}</Project>
       <Name>RF.Inventory.Data</Name>
     </ProjectReference>
+    <ProjectReference Include="..\RF.Inventory.Domain\RF.Inventory.Domain.csproj">
+      <Project>{b900ce09-8dfd-4d52-8eb4-65d948478a53}</Project>
+      <Name>RF.Inventory.Domain</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

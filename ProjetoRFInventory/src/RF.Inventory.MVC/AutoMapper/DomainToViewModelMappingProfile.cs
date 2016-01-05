@@ -1,4 +1,6 @@
 ﻿using AutoMapper;
+using RF.Inventory.Domain.Entities;
+using RF.Inventory.MVC.ViewModels;
 
 namespace RF.Inventory.MVC.AutoMapper
 {
@@ -7,7 +9,7 @@ namespace RF.Inventory.MVC.AutoMapper
 
         protected override void Configure()
         {
-
+            Mapper.CreateMap<EmpresaViewModel, Empresa>();
         }
 
     }
