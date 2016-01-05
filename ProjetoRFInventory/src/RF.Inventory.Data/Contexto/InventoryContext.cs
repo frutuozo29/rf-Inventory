@@ -37,6 +37,9 @@ namespace RF.Inventory.Data.Contexto
                 .Configure(p => p.HasMaxLength(100));
 
             modelBuilder.Configurations.Add(new EmpresaConfiguration());
+            modelBuilder.Configurations.Add(new GrupoProdutoConfiguration());
+            modelBuilder.Configurations.Add(new ImportacaoConfiguration());
+            modelBuilder.Configurations.Add(new SituacaoDiefConfiguration());
         }
 
         public override int SaveChanges()

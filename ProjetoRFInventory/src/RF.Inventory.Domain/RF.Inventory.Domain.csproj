@@ -37,10 +37,14 @@
     <Compile Include="Entities\GrupoProduto.cs" />
     <Compile Include="Entities\Importacao.cs" />
     <Compile Include="Entities\SituacaoDief.cs" />
+    <Compile Include="Interfaces\IEmpresaRepository.cs" />
+    <Compile Include="Interfaces\IGrupoProdutoRepository.cs" />
+    <Compile Include="Interfaces\IImportacaoRepository.cs" />
+    <Compile Include="Interfaces\IRepositoryBase.cs" />
+    <Compile Include="Interfaces\ISituacaoDiefRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Interfaces\" />
     <Folder Include="Services\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
