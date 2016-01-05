@@ -14,11 +14,11 @@ namespace RF.Inventory.Domain.Entities
 
         public long SituacaoDiefId { get; set; }
 
-        public SituacaoDief SituacaoDief { get; set; }
+        public virtual SituacaoDief SituacaoDief { get; set; }
         
         public long ImportacaoId { get; set; }
 
-        public Importacao Importacao { get; set; }
+        public virtual Importacao Importacao { get; set; }
         
         public long EmpresaId { get; set; }
 

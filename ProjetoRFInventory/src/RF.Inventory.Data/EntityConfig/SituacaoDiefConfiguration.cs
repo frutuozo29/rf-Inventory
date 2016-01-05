@@ -3,17 +3,16 @@ using System.Data.Entity.ModelConfiguration;
 
 namespace RF.Inventory.Data.EntityConfig
 {
-    public class EmpresaConfiguration : EntityTypeConfiguration<Empresa>
+    class SituacaoDiefConfiguration : EntityTypeConfiguration<SituacaoDief>
     {
-        public EmpresaConfiguration()
+        public SituacaoDiefConfiguration()
         {
-            HasKey(e => e.EmpresaId);
+            HasKey(s => s.SituacaoDiefId);
 
-            Property(e => e.Nome)
+            Property(s => s.Nome)
                 .IsRequired()
                 .HasColumnType("varchar")
                 .HasMaxLength(200);
-
         }
     }
 }

@@ -16,8 +16,10 @@ namespace RF.Inventory.Data.Contexto
         }
 
         public DbSet<Empresa> Empresas { get; set; }
-
-
+        public DbSet<GrupoProduto> GrupoProdutos { get; set; }
+        public DbSet<Importacao> Importaccao { get; set; }
+        public DbSet<SituacaoDief> SituacaoDief { get; set; }
+        
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             modelBuilder.Conventions.Remove<PluralizingTableNameConvention>();

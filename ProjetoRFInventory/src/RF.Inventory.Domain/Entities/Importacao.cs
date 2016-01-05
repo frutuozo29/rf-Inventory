@@ -14,7 +14,5 @@ namespace RF.Inventory.Domain.Entities
         public long EmpresaId { get; set; }
 
         public virtual Empresa Empresa { get; set; }
-
-        public virtual IEnumerable<GrupoProduto> Grupos { get; set; }
     }
 }
