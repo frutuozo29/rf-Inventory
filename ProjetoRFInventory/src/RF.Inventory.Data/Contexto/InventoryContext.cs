@@ -10,7 +10,7 @@ namespace RF.Inventory.Data.Contexto
     class InventoryContext : DbContext
     {
         public InventoryContext()
-            : base("InventoryDB")
+            : base("InventoryConnection")
         {
 
         }
