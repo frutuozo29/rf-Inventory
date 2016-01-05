@@ -34,6 +34,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Entities\Empresa.cs" />
+    <Compile Include="Entities\GrupoProduto.cs" />
+    <Compile Include="Entities\Importacao.cs" />
+    <Compile Include="Entities\SituacaoDief.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

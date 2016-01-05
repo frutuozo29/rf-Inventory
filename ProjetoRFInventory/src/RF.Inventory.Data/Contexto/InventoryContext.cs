@@ -1,4 +1,5 @@
-﻿using RF.Inventory.Domain.Entities;
+﻿using RF.Inventory.Data.EntityConfig;
+using RF.Inventory.Domain.Entities;
 using System;
 using System.Data.Entity;
 using System.Data.Entity.ModelConfiguration.Conventions;
@@ -32,6 +33,8 @@ namespace RF.Inventory.Data.Contexto
 
             modelBuilder.Properties<string>()
                 .Configure(p => p.HasMaxLength(100));
+
+            modelBuilder.Configurations.Add(new EmpresaConfiguration());
         }
 
         public override int SaveChanges()
