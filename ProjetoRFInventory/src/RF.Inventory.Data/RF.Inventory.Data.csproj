@@ -64,7 +64,11 @@
     <Compile Include="EntityConfig\SituacaoDiefConfiguration.cs" />
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositories\EmpresaRepository.cs" />
+    <Compile Include="Repositories\GrupoProdutoRepository.cs" />
+    <Compile Include="Repositories\ImportacaoRepository.cs" />
     <Compile Include="Repositories\RepositoryBase.cs" />
+    <Compile Include="Repositories\SituacaoDiefRepository.cs" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>

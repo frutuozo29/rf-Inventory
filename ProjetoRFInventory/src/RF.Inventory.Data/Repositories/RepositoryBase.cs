@@ -3,24 +3,19 @@ using System.Collections.Generic;
 using RF.Inventory.Domain.Interfaces;
 using RF.Inventory.Data.Contexto;
 using System.Linq;
+using System.Data.Entity;
 
 namespace RF.Inventory.Data.Repositories
 {
     public class RepositoryBase<TEntity> : IDisposable, IRepositoryBase<TEntity> where TEntity : class
     {
 
-        protected InventoryContext Db = new InventoryContext();
-
+        private InventoryContext Db = new InventoryContext();
 
         public void Add(TEntity obj)
         {
             Db.Set<TEntity>().Add(obj);
             Db.SaveChanges();
-        }
-
-        public void Dispose()
-        {
-            throw new NotImplementedException();
         }
 
         public IEnumerable<TEntity> GetAll()
@@ -35,10 +30,17 @@ namespace RF.Inventory.Data.Repositories
 
         public void Remove(TEntity obj)
         {
-            throw new NotImplementedException();
+            Db.Set<TEntity>().Remove(obj);
+            Db.SaveChanges();
         }
 
         public void Update(TEntity obj)
+        {
+            Db.Entry(obj).State = EntityState.Modified;
+            Db.SaveChanges();
+        }
+
+        public void Dispose()
         {
             throw new NotImplementedException();
         }
