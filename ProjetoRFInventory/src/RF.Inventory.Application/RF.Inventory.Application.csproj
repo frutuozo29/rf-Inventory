@@ -40,7 +40,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AppServiceBase.cs" />
+    <Compile Include="EmpresaAppService.cs" />
+    <Compile Include="GrupoProdutoAppService.cs" />
+    <Compile Include="ImportacaoAppService.cs" />
+    <Compile Include="Interfaces\IAppServiceBase.cs" />
+    <Compile Include="Interfaces\IEmpresaAppService.cs" />
+    <Compile Include="Interfaces\IGrupoProdutoAppService.cs" />
+    <Compile Include="Interfaces\IImportacaoAppService.cs" />
+    <Compile Include="Interfaces\ISituacaoDiefAppService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SituacaoDiefAppService.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\RF.Inventory.Domain\RF.Inventory.Domain.csproj">
+      <Project>{b900ce09-8dfd-4d52-8eb4-65d948478a53}</Project>
+      <Name>RF.Inventory.Domain</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
