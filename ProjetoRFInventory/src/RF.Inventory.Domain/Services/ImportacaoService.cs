@@ -11,7 +11,7 @@ namespace RF.Inventory.Domain.Services
         public ImportacaoService(IImportacaoRepository importacao)
             : base(importacao)
         {
-
+            _importacao = importacao;
         }
 
     }
