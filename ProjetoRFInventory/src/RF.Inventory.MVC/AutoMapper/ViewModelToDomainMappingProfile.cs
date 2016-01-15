@@ -9,6 +9,7 @@ namespace RF.Inventory.MVC.AutoMapper
         protected override void Configure()
         {
             Mapper.CreateMap<Empresa, EmpresaViewModel>();
+            Mapper.CreateMap<SituacaoDief, SituacaoDiefViewModel>();
         }
     }
 }
